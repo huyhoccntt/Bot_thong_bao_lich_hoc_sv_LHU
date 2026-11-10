@@ -1,0 +1,54 @@
+[
+  {
+    "schedule_id": "4f79f19ae3ed457114bf36b19031bfc298e75e1a9fa1366a3acfde96c7a2c409",
+    "study_date": "2026-11-09",
+    "start_time": "12:50",
+    "end_time": "16:45",
+    "room": "C203_PM02",
+    "campus": "Cơ sở I",
+    "class_code": "25CT114",
+    "subject": "Hệ quản trị CSDL",
+    "periods": "5T",
+    "lesson_type": "Lý thuyết",
+    "teacher": "Phan Mạnh Thường"
+  },
+  {
+    "schedule_id": "67d44fbe61e4d86abc16092eea6b9a8671fc722e5fe560a1764babd57a540b5a",
+    "study_date": "2026-11-11",
+    "start_time": "07:30",
+    "end_time": "11:25",
+    "room": "C403_PM08",
+    "campus": "Cơ sở I",
+    "class_code": "25CT114",
+    "subject": "Cấu trúc dữ liệu và giải thuật",
+    "periods": "5T",
+    "lesson_type": "Lý thuyết",
+    "teacher": "Đoàn Thiện Minh"
+  },
+  {
+    "schedule_id": "3b475fbccad36d8d2bfafb988d016aaffb842f626a0095be1c8b072a2e32ecc2",
+    "study_date": "2026-11-13",
+    "start_time": "08:30",
+    "end_time": "09:15",
+    "room": "Học Online",
+    "campus": "Online",
+    "class_code": "25CT114",
+    "subject": "Cấu trúc dữ liệu và giải thuật",
+    "periods": "1T",
+    "lesson_type": "Thực hành",
+    "teacher": "Đoàn Thiện Minh"
+  },
+  {
+    "schedule_id": "a3cc76110afb42eed4dc656d477140c582f063b1fc9c6bf5abe8ce83b9a2190c",
+    "study_date": "2026-11-23",
+    "start_time": "07:30",
+    "end_time": "09:00",
+    "room": "C202_PM01",
+    "campus": "Cơ sở I",
+    "class_code": "25CV25-CT4",
+    "subject": "Kỹ năng viết CV (curriculum vitae) điện tử và trả",
+    "periods": "2T",
+    "lesson_type": "Lý thuyết",
+    "teacher": "Phí Quang Sâm"
+  }
+]
