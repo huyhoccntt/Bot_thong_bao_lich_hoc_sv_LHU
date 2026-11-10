@@ -1,0 +1,32 @@
+name: Synchronize LHU Schedule to Supabase
+
+on:
+  schedule:
+    # Chạy tự động lúc 06:00 sáng hàng ngày (giờ UTC là 23:00 tối hôm trước)
+    - cron: '0 23 * * *'
+  workflow_dispatch: # Cho phép bấm nút chạy tay bất cứ lúc nào trên GitHub
+
+jobs:
+  sync-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run sync schedule script
+        env:
+          SUPABASE_URL: "https://sngjjkbmprnngqbtyec.supabase.co"
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          LHU_BEARER_TOKEN: ${{ secrets.LHU_BEARER_TOKEN }}
+          STUDENT_ID: ${{ secrets.STUDENT_ID }}
+        run: |
+          python sync_schedule.py
